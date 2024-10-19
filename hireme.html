@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me!</title>
+    <link rel="icon" href="img/image26.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <ul class="navlist" type="none">
+            <li><a href="index.html" alt="Home Page">Home</a></li>
+            <li><a href="MyAchievements.html" target="_blank" alt="My Achievements Page">My Achievements</a></li>
+            <li><a href="MyEducation.html"target="_blank" alt="My Education Page">My Education</a></li>
+            <li><a href="MyCertificate.html"target="_blank" alt="My Certificate Page">My Certificates</a></li>
+            <li><a href="project/index.html" target="_blank" alt="Projects">Projects</a></li>
+        </ul>
+    </header>
+    <div class="regform">
+        <h3>Message me</h3>
+        <form action="#">
+            <div class="input">
+                <div class="field name">
+                    <input type="text" placeholder="Name" required>
+                </div>
+                <div class="input">
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Subject" required>
+            </div>
+            <div class="input">
+                <textarea cols="30" rows="10" placeholder="Describe Project..." required></textarea>
+            </div>
+            <div class="btn">
+                <button type="submit"><a href="index.html">Send Message</a>S<i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+    <script>
+        // Select the send button
+        const SendMessage = document.getElementById('SendMessage');
+
+        // Add a click event listener to navigate to home.html
+        SendMessage.addEventListener('click', () => {
+            // Redirect to the desired page
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

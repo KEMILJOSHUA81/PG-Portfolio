@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Box Icons Link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--remix Icons Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <!--google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link  href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/image22.jpg">
+</head>
+<body>
+    <header>    
+        <a href="#" class="logo">Portfolio</a>
+        <ul class="navlist">
+            <li><a href="index.html" alt="Home Page">Home</a></li>
+            <li><a href="MyAchievements.html" target="_blank" alt="My Achievements Page">My Achievements</a></li>
+            <li><a href="MyEducation.html"target="_blank" alt="My Education Page">My Education</a></li>
+            <li><a href="MyCertificate.html"target="_blank" alt="My Certificate Page">My Certificates</a></li>
+            <li><a href="project/index.html" target="_blank" alt="Projects">Projects</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="hireme.html" target="_blank"class="nav-btn">Hire Me!</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+        <div class="container">
+          <button class="toggle-btn" onclick="toggleTheme()"><b>LIGHT and DARK MODE</b></button>
+        </div>
+        <script>
+          // Function to toggle the dark mode class on the body
+          function toggleTheme() {
+              document.body.classList.toggle('dark-mode');
+          }
+      </script>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h6>Hi, <span>My Name is: </span></h6>
+            <h1><span>Emil </span>Joshua K</h1>
+            <h4>I'm a <span class="input"></span></h4>
+            <p>I aim to solve problem's creatively and effectively in a challenging role, while continuously enhancing both my educational and professional skills. I'm eager to work in a dynamic and stable environment that fosters growth and learning, allowing me to contribute to the success of the organization through innovative solutions and teamwork.</p>
+            <div class="hero-icons">
+                <a href="tel:+91 9150556478"><i class="ri-phone-fill"></i></a>
+                <a href="mailto:emiljoshua81@gmail.com?subject=Feedback&body=I%20would%20like%20to%20share%20feedback%20on%20your%20service."><i class="ri-mail-line"></i></a>
+                <a href="https://www.linkedin.com/feed/"target="_blank" alt="linkedin"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="https://github.com/RathnavelSubramaniam/html-css-unit-2-KEMILJOSHUA81"target="_blank" alt="github"><i class="ri-github-fill"></i></a>
+                <a href="https://www.google.com/maps?q=79,+Teacher's+colony,+Bungalapudhur+road,+kalimedu,+Kangeyam, +Tiruppur+District" target="_blank" alt="Address"><i class="ri-map-pin-line"></i></a>
+                <a href="https://www.youtube.com/feed/history"target="_blank" alt="You Tube"><i class="ri-youtube-fill"></i></a>
+                <a href="https://www.naukri.com/mnjuser/homepage"target="_blank" alt="Naukri"><img src="img/image23.jpg" alt="Naukri"></a>
+            </div>
+            <div class="hero-btn">
+                <a href="file:///C:/Users/emilj/Downloads/DocScanner%20Sep%2022,%202024%201-58%20AM.pdf" class="btn" target="_blank" alt="Resume">Download CV</a>
+                <a href="skill/skill.html" class="btn2" target="_blank" alt="Skills">My Skills</a>
+           </div>
+        </div>
+        <div class="hero-img">
+            <img src="img/Emil Joshua K.jpeg" alt="Emil Joshua K Image" title="Emil Joshua K">
+        </div>
+    </section>    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="text/javascript" >var typed =new Typed (".input",{
+        strings:["Full Stack Developer.","Designer.","MERN Stack Developer."],
+        typeSpeed: 70,
+        backSpeed: 70,
+        loop: true});
+        let menu = document.querySelector('#menu-icon');
+        let navlist = document.querySelector('.navlist');
+        menu.onclick = () =>{
+            menu.classList.toggle("bx-x");
+            navlist.classList.toggle('open')
+        }
+    </script>
+    <div class="scroll">
+        <a href="#Contact"><i class="ri-scroll-to-bottom-fill"></i>Scroll Bottom</a>
+    </div>
+<!-- contact -->
+<section id="contacts" class="contact">
+  <!-- <h2 id="Contact">Contact Me</h2> -->
+    <div class="container">
+      <!-- <h2 id="Contact">Contact Me</h2> -->
+      <div class="row mt-2">
+
+        <div class="col-md-6 d-flex align-items-stretch">
+          <p><h2 id="Contact">Contact Me</h2></p>
+          
+          <div class="info-box">
+            <!-- <p id="Contact">Contact Me</p> -->
+            <i class="bx bx-map"></i>
+           
+            <h3>My Address</h3>
+            <p>79, Teacher's colony,</p>
+            <p>Bungalapudhur Road,</p>
+            <p>Kangeyam,638 701.</p>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <h3>Email</h3>
+            <p>emiljoshua81@gmail.com</p>
+            
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-phone-call"></i>
+            <h3>Contact</h3>
+            <p>9150556478</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <script src="script.js" async></script> -->
+</body>
+</html>
